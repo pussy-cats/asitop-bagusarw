@@ -52,7 +52,7 @@ def run_powermetrics_process(timecode, nice=10, interval=1000):
         "sudo nice -n",
         str(nice),
         "powermetrics",
-        "--samplers cpu_power,gpu_power,thermal,bandwidth",
+        "--samplers cpu_power,gpu_power,thermal",
         output_file_flag,
         "/tmp/asitop_powermetrics"+timecode,
         "-f plist",
